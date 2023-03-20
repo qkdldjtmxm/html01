@@ -9,6 +9,11 @@
     <body>
         <h1>2줄 3칸 기본 표 만들기</h1>
         <table border="1" width="50%">
+            <caption>
+                <strong>기본 테이블 입니다.</strong>
+                <br>
+                2줄 3칸짜리 표입니다.
+            </caption>
             <!--1번줄-->
             <tr>
                 <td>1</td>
@@ -27,20 +32,25 @@
         <hr>
 
         <h1>표에 제목 셀 만들기</h1>
-        <table border="1" width="50%">
-            <tr>
-                <th>학과</th>
-                <td>컴퓨터공학부</td>
-            </tr>
-            <tr>
-                <th>학번</th>
-                <td>202395023</td>
-            </tr>
-            <tr>
-                <th>이름</th>
-                <td>이동혁</td>
-            </tr>
-        </table>
+        <figure>
+            <figcaption>
+                표에 제목 셀 만들기 입니다.
+            </figcaption>
+            <table border="1" width="50%">
+                <tr>
+                    <th>학과</th>
+                    <td>컴퓨터공학부</td>
+                </tr>
+                <tr>
+                    <th>학번</th>
+                    <td>202395023</td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>이동혁</td>
+                </tr>
+            </table>
+        </figure>
 
         <hr>
 
@@ -60,6 +70,95 @@
                 <td>10</td>
                 <td>11</td>            
             </tr>
+        </table>
+
+        <hr>
+
+        <h1>1-1 시간표 - 이동혁</h1>
+
+        <!--thead, tbody, tfoot-->
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1교시</th>
+                    <td></td>
+                    <td rowspan="2" bgcolor="skyblue">SW프로그래밍사고</td>
+                    <td rowspan="2" bgcolor="skyblue">SW프로그래밍사고</td>
+                    <td rowspan="2">공학적글쓰기</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>2교시</th>
+                    <td rowspan="2" bgcolor="orange">컴퓨터공학개론</td>  
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>3교시</th>
+                    <td rowspan="2" bgcolor="lime">영화에게영화를묻다</td>
+                    <td></td>
+                    <td rowspan="2">성공사례로 배우는 창업</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>4교시</th>
+                    <td></td>
+                    <td bgcolor="orange">컴퓨터공학개론</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5교시</th>
+                    <td rowspan="2" bgcolor="greenyellow">웹제작</td>
+                    <td rowspan="2">글로벌직업탐구</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>6교시</th> 
+                    <td></td>
+                    <td>대학생활과 진로탐색I</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>7교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2" bgcolor="greenyellow">웹제작</td>
+                </tr>
+                <tr>
+                    <th>8교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <th>9교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">1교시 수업 시작은 9시 30분입니다.</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
